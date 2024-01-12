@@ -1,0 +1,40 @@
+.head {
+    /* background-color: rgba(127, 255, 212, 0.198); */
+    background: linear-gradient(to left, black,rgba(255, 255, 255, 0.402));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav {
+    /* background-color: aqua; */
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    float: right;
+    color: white;
+    margin-right: 45px;
+}
+
+
+.nav :link {
+    padding: 10px;
+    margin-right: 25px;
+    
+    
+}
+
+.head h3 {
+    font-size: 29px;
+    margin-left: 34px;
+    font-family: cursive;
+    padding: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.nav strong{
+    color: white;
+}

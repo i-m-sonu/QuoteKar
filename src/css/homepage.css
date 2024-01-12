@@ -1,0 +1,8 @@
+.cardd{
+  display: grid;
+  /* flex-direction: row; */
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  
+  
+}
