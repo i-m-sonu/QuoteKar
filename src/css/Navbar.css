@@ -1,11 +1,10 @@
 .head {
     /* background-color: rgba(127, 255, 212, 0.198); */
-    background: linear-gradient(to left, black,rgba(255, 255, 255, 0.402));
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
+    box-shadow: 4px 15px 20px grey;
 }
 
 .nav {
@@ -16,6 +15,7 @@
     float: right;
     color: white;
     margin-right: 45px;
+    font-size: larger;
 }
 
 
@@ -29,12 +29,29 @@
 .head h3 {
     font-size: 29px;
     margin-left: 34px;
-    font-family: cursive;
+    font-family: Itim,cursive;
     padding: 0px;
     margin-top: 8px;
     margin-bottom: 8px;
+    user-select: none;
+    animation: name 3s  infinite alternate ;
 }
-
+@keyframes name {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
 .nav strong{
-    color: white;
+    color: rgb(177, 177, 177);
+    transition: .1s;
+}
+.nav  :hover{
+    color: rgb(1, 1, 1);
 }

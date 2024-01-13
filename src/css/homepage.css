@@ -1,8 +1,117 @@
-.cardd{
+body{
+  /* background-image: url('https://picsum.photos/600/300'); */
+  background-image: url('/247-600x300.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(to bottom right,rgba(12, 96, 138, 0.644),rgba(131, 110, 202, 0.556),rgba(255, 255, 255, 0.378));
+  
+  
+}
+
+.cardd {
   display: grid;
   /* flex-direction: row; */
   grid-template-columns: auto auto auto;
   padding: 20px;
+  user-select: none;
   
+
+
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 100px;
+
+  display: inline-block;
+  animation: circlebr 10s infinite alternate;
+  box-shadow: 4px 5px 20px grey;
+}
+
+@keyframes circlebr {
+  0% {
+    background: linear-gradient(90deg, rgba(238, 130, 238, 0.51) 0%, rgba(0, 208, 255, 0.509) 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  25% {
+    background: linear-gradient(90deg, rgba(238, 130, 238, 0.483) 0%, rgba(0, 208, 255, 0.505) 100%);
+    border-radius: 30% 70% 27% 73% / 72% 52% 48% 28%;
+  }
+
+  50% {
+    background: linear-gradient(90deg, rgba(238, 130, 238, 0.475) 0%, rgba(0, 208, 255, 0.428) 100%);
+    border-radius: 61% 39% 42% 58% / 55% 23% 77% 45%;
+  }
+
+  75% {
+    background: linear-gradient(90deg, rgba(238, 130, 238, 0.42) 0%, rgba(0, 208, 255, 0.445) 100%);
+    border-radius: 13% 87% 14% 86% / 89% 19% 81% 11%;
+  }
+
+  100% {
+    background: linear-gradient(90deg, rgba(238, 130, 238, 0.428) 0%, rgba(0, 208, 255, 0.448) 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+
+
+.text {
+
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-family: monospace;
+  position: relative;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(9, end) infinite alternate, cursor .4s infinite alternate;
+  user-select: none;
+}
+
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+
+
+  }
+
+}
+
+@keyframes typing {
+
+  from {
+    width: 0;
+  }
+
+  to {
+
+    width: 100%;
+  }
+}
+
+.footer{
+  background-color: black;
+  
+}
+.created{
+  color: rgba(240, 248, 255, 0.827);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }

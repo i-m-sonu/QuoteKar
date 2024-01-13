@@ -9,3 +9,7 @@ a{
     color:black;
     text-decoration: none;
 }
+body{
+    background-image: url("../247-600x300.jpg");
+    background-attachment: fixed;
+}

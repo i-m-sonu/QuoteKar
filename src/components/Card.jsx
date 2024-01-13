@@ -6,7 +6,7 @@ const Card = (props) => {
     <>
       
       <div className="card">
-        <h1 className="quote">{props.main}</h1>
+        <h2 className="quote">{props.main}</h2>
         <hr className="hr" />
         <p className="author">{props.author}</p>
       </div>

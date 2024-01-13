@@ -14,7 +14,6 @@ function App() {
         <Route exact path="/About" Component={About} />
         <Route exact path="/Search" Component={Search} />
       </Routes>
-    
     </>
   );
 }
