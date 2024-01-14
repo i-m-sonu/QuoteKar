@@ -6,14 +6,21 @@ import "../css/homepage.css";
 
 const Home = () => {
   const [val, func] = useState([]);
-  // // const apiurl = "https://dummyjson.com/quotes?limit=30";
+  const [loading, loadingfunc] = useState(true);
+  // const apiurl = "https://dummyjson.com/quotes?limit=30";
   let apiurl ="https://api.quotable.io/quotes/random?limit=30";
-  // // const apiurl = "https://zenquotes.io/api/quotes";
+  // const apiurl = "https://zenquotes.io/api/quotes";
   const api = async (url) => {
-    const apidata = await fetch(url);
-    const data = await apidata.json();
-    console.log(data);
-    func(data);
+    try {
+      const apidata = await fetch(url);
+      const data = await apidata.json();
+      console.log(data);
+      func(data);
+    } catch (e) {
+      console.log(e);
+    } finally {
+      loadingfunc(false);
+    }
   };
   useEffect(() => {
     api(apiurl);
@@ -27,24 +34,22 @@ const Home = () => {
     <>
       {/* <img className="img" src={Img} alt="" /> */}
       <div className="bg">
-
-      <div className="h">
-        <h1>Welcome to... </h1>
-      </div>
-      <div className="new">
-        <div className="container">
-          <h1 className="text">QuoteKar.</h1>
+        <div className="h">
+          <h1>Welcome to... </h1>
         </div>
-      </div>
+        <div className="new">
+          <div className="container">
+            <h1 className="text">QuoteKar.</h1>
+          </div>
+        </div>
       </div>
 
       <div className="cardd">
-        {val.map((quote, index) => (
+        {loading?(<h2>Loading...</h2>):(
+        val.map((quote, index) => (
           <Card key={index} main={quote.content} author={quote.author} />
-        ))}
+        )))}
       </div>
-
-     
     </>
   );
 };
