@@ -7,7 +7,7 @@ import "../css/homepage.css";
 const Home = () => {
   const [val, func] = useState([]);
   const [loading, loadingfunc] = useState(true);
-  // const apiurl = "https://dummyjson.com/quotes?limit=30";
+  // const apiurl = "https://dummyjson.com/quotes?limit=6";
   // let apiurl = "https://api.quotable.io/quotes/random?limit=30";
   // const apiurl = "https://zenquotes.io/api/quotes";
 
@@ -53,13 +53,13 @@ const Home = () => {
         {loading ? (
           <h1 className="h">
             <br />
+  
+            <br />
+            Please Wait Data is being loaded...
             <br />
             <br />
-            Please Wait Data is being loaded
             <br />
-            <br />
-            <br />
-            Thank You For your Patience
+            Thank You For your Patience...
             <br />
             <br />
             <br />
