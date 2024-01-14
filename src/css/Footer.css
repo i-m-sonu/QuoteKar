@@ -1,3 +1,6 @@
+body{
+    bottom: 0;
+}
 .footer {
     background-color: black;
     display: grid;
