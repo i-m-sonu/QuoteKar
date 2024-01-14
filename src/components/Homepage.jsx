@@ -21,7 +21,7 @@ const Home = () => {
           const data = await apidata.json();
           console.log(data);
           func(data);
-        }, 2000);
+        }, 1500);
       } catch (e) {
         func(file2);
       } finally {
