@@ -6,19 +6,19 @@ import "../css/homepage.css";
 
 const Home = () => {
   const [val, func] = useState([]);
-  // // const apiurl = "https://dummyjson.com/quotes?limit=50";
-  // let apiurl ="https://api.quotable.io/quotes/random?limit=40";
+  // // const apiurl = "https://dummyjson.com/quotes?limit=30";
+  let apiurl ="https://api.quotable.io/quotes/random?limit=30";
   // // const apiurl = "https://zenquotes.io/api/quotes";
-  // const api = async (url) => {
-  //   const apidata = await fetch(url);
-  //   const data = await apidata.json();
-  //   console.log(data);
-  //   func(data);
-  // };
+  const api = async (url) => {
+    const apidata = await fetch(url);
+    const data = await apidata.json();
+    console.log(data);
+    func(data);
+  };
   useEffect(() => {
-    // api(apiurl);
-    console.log(file2);
-    func(file2);
+    api(apiurl);
+    // console.log(file2);
+    // func(file2);
   }, []);
   // const handleClick = ()=>{
   //     document.getElementById("").style.backgroundColor = ""

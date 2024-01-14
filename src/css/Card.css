@@ -12,7 +12,7 @@
   border: 1px solid black;
   border-radius: 20px;
 
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.479), rgba(255, 255, 255, 0.484)), url(/src/images/a11.webp);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.746), rgba(255, 255, 255, 0.733)), url(/public/images/a11.webp);
   box-shadow: 4px 15px 20px rgb(113, 105, 173);
 
   background-repeat: no-repeat;

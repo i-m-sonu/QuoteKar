@@ -1,5 +1,10 @@
 import React from "react";
-import '../css/About.css'
+import "../css/About.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import AbcIcon from "@mui/icons-material/Abc";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const About = () => {
   return (
@@ -71,7 +76,45 @@ const About = () => {
           features, ensuring a compelling and ever-evolving experience for users
           seeking inspiration, wisdom, or simply a moment of reflection.
         </p>
-      </div>
+        <h1>Contact Information</h1>
+        <h3>Follow me on Social Media:-</h3>
+        <ul>
+          <li>
+            {" "}
+            <a href="https://instagram.com/i.soonu">
+              <h4>
+                <InstagramIcon></InstagramIcon>
+                <span>  @i.soonu</span>
+              </h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/i-m-sonu">
+              <h4>
+                <GitHubIcon />
+                <span>  i-m-sonu</span>
+              </h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sonu007">
+              <h4>
+                <LinkedInIcon />
+                <span>  sonu007</span>
+              </h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/i_soonu_">
+              <h4>
+                <TwitterIcon />
+                <span>  i_soonu_</span>
+              </h4>
+            </a>
+          </li>
+        </ul>
+        If you have any suggestion or any query mail me at <a href="mail:sonu170803@gmail.com">sonu170803@gmail.com</a>
+      .</div>
     </>
   );
 };

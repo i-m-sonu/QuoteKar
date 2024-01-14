@@ -11,3 +11,8 @@
 .about p{
     font-size: medium;
 }
+li{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
