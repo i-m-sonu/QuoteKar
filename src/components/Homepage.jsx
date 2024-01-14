@@ -17,7 +17,7 @@ const Home = () => {
       console.log(data);
       func(data);
     } catch (e) {
-      console.log(e);
+      func(file2);
     } finally {
       loadingfunc(false);
     }
@@ -45,7 +45,7 @@ const Home = () => {
       </div>
 
       <div className="cardd">
-        {loading?(<h2>Loading...</h2>):(
+        {loading?(<h1>Loading...</h1>):(
         val.map((quote, index) => (
           <Card key={index} main={quote.content} author={quote.author} />
         )))}
