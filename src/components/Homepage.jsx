@@ -15,12 +15,12 @@ const Home = () => {
     const api = async (url) => {
       try {
         // setTimeout(async () => {
-          const apidata = await fetch(
-            "https://api.quotable.io/quotes/random?limit=12"
-          );
-          const data = await apidata.json();
-          console.log(data);
-          func(data);
+        const apidata = await fetch(
+          "https://api.quotable.io/quotes/random?limit=6"
+        );
+        const data = await apidata.json();
+        // console.log(data);
+        func(data);
         // }, 1500);
       } catch (e) {
         func(file2);
