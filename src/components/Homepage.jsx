@@ -16,7 +16,7 @@ const Home = () => {
       try {
         // setTimeout(async () => {
           const apidata = await fetch(
-            "https://api.quotable.io/quotes/random?limit=30"
+            "https://api.quotable.io/quotes/random?limit=12"
           );
           const data = await apidata.json();
           console.log(data);
