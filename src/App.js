@@ -3,7 +3,8 @@ import "./App.css";
 import Home from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Search from "./components/Search";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route exact path="/About" Component={About} />
-        <Route exact path="/Search" Component={Search} />
+       
       </Routes>
+      <Footer/>
     </>
   );
 }

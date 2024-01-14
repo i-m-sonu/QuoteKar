@@ -1,0 +1,64 @@
+/* Add your styling for the hamburger menu */
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .space{
+    margin-left: 20px;
+  }
+  
+  /* Media query to show/hide the hamburger menu based on screen width */
+  @media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-menu a {
+      margin: 10px 0;
+    }
+  
+    .nav-menu.show {
+      display: flex;
+    }
+  
+    .bar.rotate-up, .bar.rotate-down {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .bar.rotate-up:nth-child(2), .bar.rotate-down:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.rotate-up:nth-child(3), .bar.rotate-down:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

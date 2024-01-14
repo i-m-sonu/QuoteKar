@@ -1,21 +1,23 @@
-body{
+body {
   /* background-image: url('https://picsum.photos/600/300'); */
-  background-image: url('/247-600x300.jpg');
-  background-repeat: no-repeat;
+  /* background-image: url('/247-600x300.jpg'); */
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background: linear-gradient(to bottom right,rgba(12, 96, 138, 0.644),rgba(131, 110, 202, 0.556),rgba(255, 255, 255, 0.378));
-  
-  
+  background-position: center; */
+  /* background: linear-gradient(to bottom right,rgba(12, 96, 138, 0.644),rgba(131, 110, 202, 0.556),rgba(255, 255, 255, 0.378)); */
+
+
 }
 
+
 .cardd {
+  background: linear-gradient(to bottom right, #159ce4b9,#134fdca2, #9c16df);
   display: grid;
   /* flex-direction: row; */
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 20px;
   user-select: none;
-  
+
 
 
 }
@@ -24,6 +26,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .container {
@@ -100,18 +103,39 @@ body{
   }
 }
 
-.footer{
-  background-color: black;
-  
-}
-.created{
-  color: rgba(240, 248, 255, 0.827);
-  text-transform: capitalize;
-  display: flex;
+
+
+
+
+.h {
+  margin-left: 20px;
+  padding-top: 20px;
+  font-size: x-large;
   justify-content: center;
   align-items: center;
-  padding: 20px;
- 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  color: aliceblue;
+}
+
+.bg {
+  background:linear-gradient(to bottom,rgba(0, 0, 0, 0.858),rgba(255, 255, 255, 0.308),rgba(255, 255, 255, 0.015)),url(/src/images/a6.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(20px);
+}
+
+@media screen and (max-width: 600px) {
+  .cardd {
+    grid-template-columns: repeat(auto-fill);
+  }
+
+  .container {
+    padding: 3px;
+    margin-top: 0px;
+    
+  }
+  .text{
+    font-size: 50px;
+    padding: 25px;
+  }
+
 }

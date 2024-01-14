@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-.card{
-    margin: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: itim,cursive;
+
+.card {
+
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: itim, cursive;
   align-items: center;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.594);
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.479), rgba(255, 255, 255, 0.484)), url(/src/images/a11.webp);
   box-shadow: 4px 15px 20px rgb(113, 105, 173);
-  /* background-image: url('/247-600x300.jpg');
+
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   transition: .3s;
 }
-.card:hover{
-  filter:drop-shadow(0px 0px 10px rgb(136, 86, 253))
+
+.card:hover {
+  filter: drop-shadow(0px 0px 10px rgb(136, 86, 253))
 }

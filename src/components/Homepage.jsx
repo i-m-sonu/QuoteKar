@@ -26,23 +26,24 @@ const Home = () => {
   return (
     <>
       {/* <img className="img" src={Img} alt="" /> */}
-     <div className="new">
+      <div className="bg">
 
-      <div className="container">
-        <h1 className="text">QuoteKar.</h1>
-       
+      <div className="h">
+        <h1>Welcome to... </h1>
       </div>
-     </div>
-    
+      <div className="new">
+        <div className="container">
+          <h1 className="text">QuoteKar.</h1>
+        </div>
+      </div>
+      </div>
+
       <div className="cardd">
         {val.map((quote, index) => (
           <Card key={index} main={quote.content} author={quote.author} />
         ))}
       </div>
-      
-      <div className="footer">
-        <div className="created">created by sonu</div>
-      </div>
+
      
     </>
   );

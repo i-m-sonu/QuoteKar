@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 15px 20px grey;
+    padding-right: 20px;
 }
 
 .nav {
@@ -16,6 +17,7 @@
     color: white;
     margin-right: 45px;
     font-size: larger;
+   
 }
 
 
@@ -54,4 +56,11 @@
 }
 .nav  :hover{
     color: rgb(1, 1, 1);
+}
+@media screen and (max-width: 600px) {
+    .nav{
+
+        flex-direction: column;
+    }
+    
 }
