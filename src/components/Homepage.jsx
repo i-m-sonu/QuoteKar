@@ -8,23 +8,25 @@ const Home = () => {
   const [val, func] = useState([]);
   const [loading, loadingfunc] = useState(true);
   // const apiurl = "https://dummyjson.com/quotes?limit=30";
-  let apiurl ="https://api.quotable.io/quotes/random?limit=30";
+  // let apiurl = "https://api.quotable.io/quotes/random?limit=30";
   // const apiurl = "https://zenquotes.io/api/quotes";
- 
+
   useEffect(() => {
     const api = async (url) => {
       try {
-        const apidata = await fetch(url);
-        const data = await apidata.json();
-        console.log(data);
-        func(data);
+        setTimeout(async () => {
+          const apidata = await fetch("https://api.quotable.io/quotes/random?limit=30");
+          const data = await apidata.json();
+          console.log(data);
+          func(data);
+        }, 50);
       } catch (e) {
         func(file2);
       } finally {
         loadingfunc(false);
       }
     };
-    api(apiurl);
+    api();
     // console.log(file2);
     // func(file2);
   }, []);
@@ -46,10 +48,31 @@ const Home = () => {
       </div>
 
       <div className="cardd">
-        {loading?(<h1 className="h"><br/><br/><br/>Please Wait Data is being loaded<br/><br/><br/>Thank You For your Patience<br/><br/><br/>Loading...<br/><br/><br/></h1>):(
-        val.map((quote, index) => (
-          <Card key={index} main={quote.content} author={quote.author} />
-        )))}
+        {loading ? (
+          <h1 className="h">
+            <br />
+            <br />
+            <br />
+            Please Wait Data is being loaded
+            <br />
+            <br />
+            <br />
+            Thank You For your Patience
+            <br />
+            <br />
+            <br />
+            Loading...
+            <br />
+            <br />
+            <br />
+          </h1>
+        ) : (
+
+       val.map((quote, index) => (
+            <Card key={index} main={quote.content} author={quote.author} />
+          ))
+       
+        )}
       </div>
     </>
   );
