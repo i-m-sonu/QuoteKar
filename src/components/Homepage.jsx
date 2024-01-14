@@ -15,11 +15,13 @@ const Home = () => {
     const api = async (url) => {
       try {
         setTimeout(async () => {
-          const apidata = await fetch("https://api.quotable.io/quotes/random?limit=30");
+          const apidata = await fetch(
+            "https://api.quotable.io/quotes/random?limit=30"
+          );
           const data = await apidata.json();
           console.log(data);
           func(data);
-        }, 50);
+        }, 2000);
       } catch (e) {
         func(file2);
       } finally {
@@ -67,11 +69,9 @@ const Home = () => {
             <br />
           </h1>
         ) : (
-
-       val.map((quote, index) => (
+          val.map((quote, index) => (
             <Card key={index} main={quote.content} author={quote.author} />
           ))
-       
         )}
       </div>
     </>
