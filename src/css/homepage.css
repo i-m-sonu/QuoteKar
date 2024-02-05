@@ -15,8 +15,8 @@ body {
   display: grid;
   /* flex-direction: row; */
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  padding: 20px;
   user-select: none;
+  place-self: center;
 
 
 
@@ -131,7 +131,7 @@ body {
   .container {
     padding: 3px;
     margin-top: 0px;
-    
+    overflow: hidden;
   }
   .text{
     font-size: 50px;

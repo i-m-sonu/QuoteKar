@@ -8,3 +8,8 @@
 
 
     background: linear-gradient(90deg, rgba(238, 130, 238, 1) 0%, rgba(0, 209, 255, 1) 100%);
+
+
+// const apiurl = "https://dummyjson.com/quotes?limit=6";
+  // let apiurl = "https://api.quotable.io/quotes/random?limit=30";
+  // const apiurl = "https://zenquotes.io/api/quotes";

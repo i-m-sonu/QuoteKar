@@ -7,21 +7,15 @@ import "../css/homepage.css";
 const Home = () => {
   const [val, func] = useState([]);
   const [loading, loadingfunc] = useState(true);
-  // const apiurl = "https://dummyjson.com/quotes?limit=6";
-  // let apiurl = "https://api.quotable.io/quotes/random?limit=30";
-  // const apiurl = "https://zenquotes.io/api/quotes";
 
   useEffect(() => {
     const api = async (url) => {
       try {
-        // setTimeout(async () => {
         const apidata = await fetch(
           "https://api.quotable.io/quotes/random?limit=6"
         );
         const data = await apidata.json();
-        // console.log(data);
         func(data);
-        // }, 1500);
       } catch (e) {
         func(file2);
       } finally {
@@ -29,15 +23,10 @@ const Home = () => {
       }
     };
     api();
-    // console.log(file2);
-    // func(file2);
   }, []);
-  // const handleClick = ()=>{
-  //     document.getElementById("").style.backgroundColor = ""
-  // }
+
   return (
     <>
-      {/* <img className="img" src={Img} alt="" /> */}
       <div className="bg">
         <div className="h">
           <h1>Welcome to... </h1>
@@ -53,7 +42,6 @@ const Home = () => {
         {loading ? (
           <h1 className="h">
             <br />
-  
             <br />
             Please Wait Data is being loaded...
             <br />
